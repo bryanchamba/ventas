@@ -1,8 +1,5 @@
 package com.bryan.ventas.ventas.Entities;
 
-// import java.util.LinkedList;
-// import jakarta.persistence.CascadeType;
-// import jakarta.persistence.OneToMany;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,9 +20,6 @@ public class Clientes {
 
     @Column(nullable = false, length = 75)
     private String cli_nombres;
-
-    // @OneToMany(cascade = CascadeType.ALL, mappedBy = "cliente")
-    // private LinkedList<CabeceraPedidos> cabeceraPedidos;
 
 
 
@@ -53,11 +47,4 @@ public class Clientes {
         this.cli_nombres = cli_nombres;
     }
 
-    // public LinkedList<CabeceraPedidos> getCabeceraPedidos() {
-    //     return cabeceraPedidos;
-    // }
-
-    // public void setCabeceraPedidos(LinkedList<CabeceraPedidos> cabeceraPedidos) {
-    //     this.cabeceraPedidos = cabeceraPedidos;
-    // }
 }
